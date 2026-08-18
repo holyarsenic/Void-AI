@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Void | Gen Ai",
-  description: "LEarning Phase",
+  title: "Void UI",
+  description: "Generate beautiful, production-ready UI components from simple prompts. Build, customize, preview, and save components with AI.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
