@@ -3,7 +3,7 @@ import { Button } from "./button"
 
 const Navbar = () => {
   return (
-    <div className='fixed top-0 h-15 w-full flex items-center justify-between text-accent-foreground px-5'>
+    <div className='fixed top-0 h-15 w-full flex items-center justify-between text-accent-foreground px-5 z-20'>
       <div className="flex gap-2 font-theme">
         <Image src="/Logo.svg" alt="Void UI Logo" width={22} height={22} />
         <h4>Void UI</h4>
