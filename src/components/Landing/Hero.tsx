@@ -1,11 +1,14 @@
-import React from 'react'
+import Navbar from "../ui/Navbar";
+import LightLines from "../ui/light-lines";
 
 const Hero = () => {
   return (
-    <div className='h-full w-full bg-accent-foreground'>
-      
-    </div>
-  )
-}
+    <section className="relative min-h-screen w-full overflow-hidden">
+      <LightLines />
 
-export default Hero
+      <Navbar />
+    </section>
+  );
+};
+
+export default Hero;

@@ -36,10 +36,10 @@ export function LightLines({
     linesOpacity = 0.05,
     lightsOpacity = 0.9,
     speedMultiplier = 1,
-    gradientFrom = "#2462F6",
-    gradientTo = "#5999F8",
-    lightColor = "#fff",
-    lineColor = "#fff",
+    gradientFrom = "var(--background)",
+    gradientTo = "var(--primary)",
+    lightColor = "var(--foreground)",
+    lineColor = "var(--foreground)",
     children,
 }: LightLinesProps) {
     const containerRef = useRef<HTMLDivElement>(null);
