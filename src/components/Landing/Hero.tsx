@@ -63,9 +63,21 @@ const Hero = () => {
         </div>
       </div>
 
-      <div>
-        
-      </div>
+      <footer className="absolute bottom-0 left-0 z-10 w-full">
+        <div className="flex w-full items-center justify-between px-6 py-4 md:px-10 lg:px-20">
+          <span className="text-xs text-background/40 uppercase">
+            VOID UI
+          </span>
+
+          <p className="text-center text-xs text-background/40 uppercase">
+            AI-powered · From prompt to interface
+          </p>
+
+          <span className="text-xs text-background/40 uppercase">
+            2026
+          </span>
+        </div>
+      </footer>
     </section>
   );
 };
