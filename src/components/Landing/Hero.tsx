@@ -22,9 +22,11 @@ const Hero = () => {
       </div>
 
 
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-8 sm:px-10 lg:px-20 lg:py-10">
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-10 px-6 py-8 sm:px-10 lg:px-20 lg:py-10">
+
+        <h2 className="font-theme text-base md:text-2xl text-foreground/60 text-center">Describe your vision. Let the void shape your component.</h2>
         <div className="w-full max-w-2xl">
-          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-background/30 shadow-2xl shadow-black/20 backdrop-blur-xl transition-all duration-200 focus-within:border-background/20 focus-within:bg-background/40 pb-10">
+          <div className="group relative overflow-hidden rounded-xl md:rounded-3xl border border-white/10 bg-background/30 shadow-2xl shadow-black/20 backdrop-blur-xl transition-all duration-200 focus-within:border-background/20 focus-within:bg-background/40 pb-10">
 
             <textarea
               value={value}
@@ -35,7 +37,7 @@ const Hero = () => {
                   handleSubmit();
                 }
               }}
-              placeholder="What shall we create in the void?"
+              placeholder="What component should we build?"
               rows={2}
               className="min-h-30 w-full resize-none bg-transparent px-5 pt-5 pb-16 text-sm leading-6 text-white placeholder:text-white/40 outline-none scrollbar-none"/>
 
@@ -49,16 +51,20 @@ const Hero = () => {
                 variant={"default"}
                 onClick={handleSubmit}
                 disabled={!value.trim()}
-                className="flex h-9 w-9 items-center justify-center rounded-xl bg-white text-black transition-all hover:scale-105 disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:scale-100">
+                className="flex h-9 w-9 items-center justify-center rounded-xl bg-white text-black transition-all hover:scale-105 disabled:opacity-30">
                 <ArrowUp size={18} strokeWidth={2.5} />
               </Button>
             </div>
           </div>
 
-          <p className="mt-3 text-center text-xs text-white/40">
+          <p className="hidden lg:block mt-3 text-center text-xs text-white/40">
             Press Enter to send · Shift + Enter for a new line
           </p>
         </div>
+      </div>
+
+      <div>
+        
       </div>
     </section>
   );
