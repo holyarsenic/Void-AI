@@ -3,16 +3,16 @@ import { InteractiveHoverButton } from "../ui/interactive-hover-button";
 
 const ShowCase = () => {
   return (
-    <section className="relative flex min-h-screen w-full items-center overflow-hidden bg-background px-6 py-12 sm:px-10 md:py-16 lg:px-20">
+    <section className="relative flex min-h-screen w-full items-center overflow-hidden bg-background px-6 py-12 sm:px-10 md:py-16 md:px-20">
 
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0">
         <Logo className="absolute inset-0 h-full w-full rotate-180 text-foreground/5" />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl">
 
         <div className="mb-10 max-w-2xl md:mb-14">
-          <h2 className="font-theme text-2xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
+          <h2 className="font-theme text-2xl font-bold tracking-tight text-white md:text-5xl">
             From prompt to interface in seconds.
           </h2>
 
@@ -39,11 +39,11 @@ const ShowCase = () => {
 
           <div className="flex flex-col justify-center">
 
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/30">
-              Get Started
+            <span className="text-sm font-heading tracking-[0.2em] text-white/30">
+              Enroll Now
             </span>
 
-            <h3 className="mt-4 max-w-lg font-theme text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            <h3 className="mt-4 max-w-lg font-theme text-2xl font-bold tracking-tight text-white md:text-5xl">
               Bring your ideas to life.
             </h3>
 
@@ -53,7 +53,7 @@ const ShowCase = () => {
             </p>
 
             <InteractiveHoverButton
-              className="mt-10 w-fit items-center justify-center"
+              className="mt-5 md:mt-10 w-fit items-center justify-center"
             >
               Get Started
             </InteractiveHoverButton>

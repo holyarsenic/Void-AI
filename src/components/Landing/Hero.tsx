@@ -74,7 +74,7 @@ const Hero = () => {
           </p>
 
           <span className="text-xs text-background/40 font-theme">
-            2026
+            © 2026
           </span>
         </div>
       </footer>
