@@ -1,41 +1,63 @@
 import Logo from "@/assets/Logo/Logo";
+import { InteractiveHoverButton } from "../ui/interactive-hover-button";
 
 const ShowCase = () => {
   return (
-    <section className="relative w-full min-h-screen bg-background px-6 py-24 sm:px-10 lg:px-20 overflow-hidden">
+    <section className="relative flex min-h-screen w-full items-center overflow-hidden bg-background px-6 py-12 sm:px-10 md:py-16 lg:px-20">
 
-      <div className="absolute inset-0 pointer-events-none opacity-20">
-        <Logo className="absolute inset-0 h-full w-full text-foreground/10 rotate-180" />
+      <div className="absolute inset-0 pointer-events-none">
+        <Logo className="absolute inset-0 h-full w-full rotate-180 text-foreground/5" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-4 max-w-2xl text-start">
+      <div className="relative z-10 mx-auto w-full max-w-7xl">
 
-          <h2 className="font-theme text-3xl font-bold text-white sm:text-5xl tracking-tight">
+        <div className="mb-10 max-w-2xl md:mb-14">
+          <h2 className="font-theme text-2xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
             From prompt to interface in seconds.
           </h2>
 
-          <p className="mt-4 text-base leading-relaxed text-white/40">
-            Describe what you imagine. Watch AI interpret your design system and deliver 
-            production-ready, accessible components effortlessly.
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/40 md:text-base">
+            Describe what you imagine. Watch AI interpret your design system and
+            deliver production-ready, accessible components effortlessly.
           </p>
         </div>
 
-        <div className="">
-          
-          <div className="lg:col-span-7">
-            <div className="overflow-hidden rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm shadow-2xl shadow-black/50">
-              <video
-                className="h-auto w-full object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
-                disablePictureInPicture
-              >
-                <source src="/Showcase.mp4" type="video/mp4" />
-              </video>
-            </div>
+        <div className="grid items-center gap-10 md:grid-cols-2 lg:gap-20">
+
+          <div className="w-full overflow-hidden rounded-2xl border-2 border-white/50 bg-white/10 shadow-2xl shadow-black/30">
+            <video
+              className="block h-auto w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              disablePictureInPicture
+            >
+              <source src="/Showcase.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div className="flex flex-col justify-center">
+
+            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/30">
+              Get Started
+            </span>
+
+            <h3 className="mt-4 max-w-lg font-theme text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              Bring your ideas to life.
+            </h3>
+
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-white/40 md:text-base">
+              Start with a simple prompt and create beautiful, production-ready
+              interfaces with AI.
+            </p>
+
+            <InteractiveHoverButton
+              className="mt-10 w-fit items-center justify-center"
+            >
+              Get Started
+            </InteractiveHoverButton>
+
           </div>
         </div>
       </div>
