@@ -64,16 +64,16 @@ const Hero = () => {
       </div>
 
       <footer className="absolute bottom-0 left-0 z-10 w-full">
-        <div className="flex w-full items-center justify-between px-6 py-4 md:px-10 lg:px-20">
-          <span className="text-xs text-background/40 uppercase">
+        <div className="flex w-full items-center justify-between gap-3 px-6 py-4 md:px-10 lg:px-20">
+          <span className="text-xs text-background/40 font-theme">
             VOID UI
           </span>
 
-          <p className="text-center text-xs text-background/40 uppercase">
+          <p className="text-center text-xs text-background/40 font-theme">
             AI-powered · From prompt to interface
           </p>
 
-          <span className="text-xs text-background/40 uppercase">
+          <span className="text-xs text-background/40 font-theme">
             2026
           </span>
         </div>
